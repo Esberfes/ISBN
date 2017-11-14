@@ -20,12 +20,12 @@ public class ISBN {
 		}
 		return getDivisor10(sum) - sum;
 	}
-	public static int getDivisor10(int number) {
+	private static int getDivisor10(int number) {
 		while(number % 10 != 0)
 			number++;
 		return number;
 	}
-	public static boolean isPar(int number) {
+	private static boolean isPar(int number) {
 		return number % 2 == 0;
 	}
 }
